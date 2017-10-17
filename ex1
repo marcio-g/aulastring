@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+
+int c=0, v=0;
+char vogal[4]={'a','e','i','o','u'};
+char txt [50];
+printf("entre com o texto\n");
+gets (txt);
+do{
+        if(txt[c]==vogal[0]||txt[c]==vogal[1]||txt[c]==vogal[2]||txt[c]==vogal[3]||txt[c]==vogal[4]){
+            v++;
+            c++;
+        }
+        else{
+        c++;}
+}while(c<=strlen(txt));
+printf("\n%d e %d", c, v);
+}
